@@ -7,15 +7,16 @@ import Support from './Pages/Support/Support';
 
 function App() {
   return (
-   <Router>
+
    <div className='h-screen w-screen bg-black'>
       <Header /> 
+      <Router>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='support' element={<Support />} />
       </Routes>
+     </Router>
    </div>
-   </Router>
   );  
 }
 

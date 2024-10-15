@@ -1,9 +1,11 @@
-import React from 'react'
+import React,{FC} from 'react'
 import Logo from '../../Assets/Gif/Converter.gif'
 
-type Props = {}
+interface Props{
 
-const Header = (props: Props) => {
+}
+
+const Header:FC<Props> = ({}) => {
   return (
     <div className='w-full bg-gradient-to-bl from-slate-900 via-purple-900 to-slate-900 h-[10%]'>
       <div className='h-[100%] flex justify-between items-center ml-3 mr-3'>
@@ -12,16 +14,13 @@ const Header = (props: Props) => {
             <h2 className='font-bold text-2xl'>Convertor</h2>
         </div>
         <div className='flex text-white gap-2'>
-        <span>
+      
+
+        <span className='cursor-pointer'>
           About
         </span>
-
-        <span>
-          About
-        </span>
-
-        <span>
-          About
+        <span className='cursor-pointer'>
+          Contact
         </span>
         </div>
       </div>
