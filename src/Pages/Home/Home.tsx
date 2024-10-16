@@ -9,12 +9,14 @@ const Home = (props: Props) => {
 
   const boxData = [
     {
-      label : 'Image to PDF and Pdf to Image',
+      label : 'Image to PDF',
       img_left : Image,
       img_right : PDF
     },
     {
-      label : 'Word to PDF'
+      label : 'PDF to Image',
+      img_left : PDF,
+      img_right : Image
     },
     {
       label : 'Excell to PDF'

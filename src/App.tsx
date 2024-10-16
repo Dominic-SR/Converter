@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Link, Route} from 'react-router-dom';
 import Header from './Components/Header/Header';
 import Home from './Pages/Home/Home';
 import Support from './Pages/Support/Support';
+import Convert from './Pages/Convert/Convert';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='support' element={<Support />} />
+        <Route path='convert' element={<Convert />} />
       </Routes>
      </Router>
    </div>
